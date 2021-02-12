@@ -1,0 +1,76 @@
+Na, Nm, Nc: the number of blocks of associated data, plaintext, and ciphertext, respectively.
+
+v1:
+
+a. Design goal
+	
+Basic iterative architecture
+
+b. Supported maximum sizes of inputs: 
+
+unlimited
+
+c. Reference software implementation
+        
+spix128v1
+
+d. Non-default values of generics and constants
+
+None.
+
+e. Block Sizes
+	
+AD Block Size: 64 bits
+Plaintext/Ciphertext block size: 64 bits
+	
+f. Execution times
+
+Execution time of authenticated encryption:
+98+11*Na+11*Nm
+    
+Execution time of authenticated decryption:
+98+11*Na+11*Nm
+
+g. Difference between execution times for a new key and the same key
+
+No support for key reuse
+
+
+
+v2:
+
+a. Design goal
+	
+Basic iterative architecture, sequential SBOX to lower power usage.
+
+b. Supported maximum sizes of inputs: 
+
+unlimited
+
+c. Reference software implementation
+        
+spix128v1
+
+d. Non-default values of generics and constants
+
+None.
+
+e. Block Sizes
+	
+AD Block Size: 64 bits
+Plaintext/Ciphertext block size: 64 bits
+	
+f. Execution times
+
+Execution time of authenticated encryption:
+98+11*8*Na+11*8*Nm
+    
+Execution time of authenticated decryption:
+98+11*8*Na+11*8*Nm
+
+g. Difference between execution times for a new key and the same key
+
+No support for key reuse
+
+
+
